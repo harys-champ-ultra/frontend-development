@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .4s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+.wrapper-head {
+    background: #111111;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid dodgerblue;
+    position: fixed;
+    width: 100%;
+    .head {
+        padding: 16px 72px;
+        margin: 0 auto;
+        max-width: 1366px;
+        line-height: 25px;
+        a {
+            color: #F5F5F5;
+            text-decoration: none;
+            padding: 0 16px;
+            transition: .4s;
+            font-weight: 500;
+        }
+        a:hover {
+            color: dodgerblue;
+        }
+        a.logo {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .navs {
+            float: right;
+            cursor: default; 
+        }
+    }
+}
+
+.wrapper-head:hover {
+    background: #000000;
+    a {
+        color: #4e4e4e;
+    }
+}
+
+.wrapper-home {
+    background: linear-gradient(rgba(0, 26, 56, 0.8), rgba(0, 0, 0, 0.8)), url(../images/20210503_030920.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    .home {
+        padding: 0 88px;
+        margin: 0 auto;
+        max-width: 1366px;
+        h1 {
+            font-weight: 500;
+            color: #b4d9ff;
+        }
+        p {
+            color: #F5F5F5;
+        }
+        p, a {
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+    }
+}
+
+.wrapper-home-new {
+    background: linear-gradient(136deg, #5cb3a7, #06919b, #1853a5, #45a7b4);
+    background-size: 800% 800%;
+    animation: AnimationName 12s ease infinite;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    .content {
+        padding: 0 88px;
+        margin: 0 auto;
+        max-width: 1366px;
+        text-align: center;
+        h1 {
+            font-weight: 500;
+        }
+        h1, p, a {
+            color: #F5F5F5;
+        }
+        p, a {
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+    }
+}
+
+.wrapper-about, .wrapper-about-video, .wrapper-symptoms, .wrapper-symptoms-poster, .wrapper-updates, .wrapper-help, .wrapper-help-video, .wrapper-map {
+    background: #1a1a1a;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    .about, .symptoms, .poster, .updates, .help, .map {
+        padding: 0 88px;
+        margin: 0 auto;
+        max-width: 1366px;
+        h1 {
+            font-weight: 500;
+            color: #b4d9ff;
+        }
+        p {
+            color: #F5F5F5;
+        }
+        p, a {
+            font-size: 18px;
+        }
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #F5F5F5;
+            font-size: 18px;
+            text-align: center;
+            th {
+                background: #b4d9ff;
+                color: #1a1a1a;
+                border: 1px solid #1a1a1a;
+            }
+            td {
+                padding: 8px;
+                border: 1px solid #b4b4b4;
+            }
+        }
+        button {
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            background: #3d9eff;
+            font-weight: 500;
+            border: 0;
+            padding: 4px 8px;
+        }
+        button:focus {
+            outline: 0;
+        }
+        button:hover {
+            background: #1d8eff;
+        }
+    }
+    .poster {
+        .post {
+            background: url(../images/sym.png) no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 120vh;
+        }
+    }
+    .video {
+        padding: 0 88px;
+        margin: 0 auto;
+        max-width: 1366px;
+        video {
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+        }
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+    }
+}
+
+.wrapper-symptoms {
+    height: 140vh;
+    ul {
+        padding: 0 18px;
+        color: #F5F5F5;
+    }
+}
+
+.wrapper-symptoms-poster {
+    height: 160vh;
+}
+
+.cursor {
+    position: fixed;
+    height: 0;
+    width: 0;
+    border: 8px solid #1d8eff;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: .1s;
+}
+
+@keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+
+
+
+@media screen and (max-width:800px) {
+    .wrapper-head {
+        .head {
+            padding: 16px 24px;
+        }
+    }
+    .wrapper-home, .wrapper-home-new, .wrapper-about, .wrapper-symptoms, .wrapper-symptoms-poster, .wrapper-about-video, .wrapper-updates, .wrapper-help, .wrapper-help-video, .wrapper-map {
+        .home, .content, .about, .symptoms, .poster, .video, .updates, .help, .map {
+            padding: 0 40px;
+            video {
+                width: 100%;
+            }
+        }
+    }
+    .wrapper-help {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .wrapper-head {
+        .head {
+            padding: 16px 18px;
+            a {
+                padding: 0 4px;
+            }
+            .navs {
+                float: none;
+            }
+        }
+    }
+    .wrapper-home, .wrapper-home-new, .wrapper-about, .wrapper-symptoms, .wrapper-symptoms-poster, .wrapper-about-video, .wrapper-updates, .wrapper-help, .wrapper-help-video, .wrapper-map {
+        .home, .content, .about, .symptoms, .poster, .video, .updates, .help, .map {
+            padding: 0 24px;
+            video {
+                width: 100%;
+            }
+        }
+    }
+}

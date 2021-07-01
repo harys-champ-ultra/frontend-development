@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <audio id="audio" src="sounds/Sad.mp3"></audio>
+    <div class="wrapper-head">
+        <div class="head">
+            <a href="index.html" class="logo">cv19®</a>
+            <div class="navs">
+                <a href="about.html" class="nav">about</a>
+                <a href="symptoms.html" class="nav">symptoms</a>
+                <a href="updates.html" class="nav">updates</a>
+                <a href="help.html" class="nav">help</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-home" id="part-1">
+        <div class="home">
+            <h1>Coronavirus</h1>
+            <p>"Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus."(WHO, no date). This pandemic has changed our way of living and working.</p>
+            <a onclick="tapPlay()">feelings ›</a>
+        </div>
+    </div>
+
+    <div class="wrapper-home-new" id="part-2">
+        <div class="content">
+            <h1>The feeling sound</h1>
+            <p>If you want to feel the sadness for the poeple who lost their beloved ones, listen to this clip.</p>
+            <a onclick="tapStop()">stop ×</a>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

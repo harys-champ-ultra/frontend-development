@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper-head">
+        <div class="head">
+            <a href="index.html" class="logo">cv19®</a>
+            <div class="navs">
+                <a href="about.html" class="nav">about</a>
+                <a href="symptoms.html" class="nav">symptoms</a>
+                <a href="updates.html" class="nav">updates</a>
+                <a href="help.html" class="nav">help</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-help" id="part-1">
+        <div class="help">
+            <h1>Help</h1>
+            <p>Here is the table to help you to do the right things, describes everything about the infected and non infected person for covid.</p>
+            <table>
+                <tr>
+                    <th>Infected</th>
+                    <th>Non infected</th>
+                </tr>
+                <tr>
+                    <td>Isolate yourself</td>
+                    <td>Stay away of gathering</td>
+                </tr>
+                <tr>
+                    <td>Eat healthy</td>
+                    <td>Wear a mask</td>
+                </tr>
+                <tr>
+                    <td>Ask for help whenever needed</td>
+                    <td>Use a sanitizer</td>
+                </tr>
+                <tr>
+                    <td>Call the emergency number</td>
+                    <td>Call the consultaion number</td>
+                </tr>
+                <tr>
+                    <td>Keep the social distance</td>
+                    <td>Keep the social distance</td>
+                </tr>
+            </table>
+            <br>
+            <a href="#part-2">How to protect your kids?</a>
+        </div>
+    </div>
+
+    <div class="wrapper-help-video" id="part-2">
+        <div class="video">
+            <video controls loop id="myVideo">
+                <source src="videos/kids.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <br>
+            <a href="#part-1">back to top ↑</a>
+        </div>
+    </div>
+
+    <div class="wrapper-map">
+        <div class="map">
+            <h1>Geolocation Coordinates</h1>
+            <p>Use these coordinates and put it on the map, then you'll find your nearest hospitals.</p>
+            <button onclick="getLocation()">Check</button>
+            <p id="result"></p>
+            <br>
+            <a href="#part-1">back to top ↑</a>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

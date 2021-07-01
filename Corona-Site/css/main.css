@@ -1,0 +1,348 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+}
+
+.wrapper-head {
+  background: #111111;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-bottom: 2px solid dodgerblue;
+  position: fixed;
+  width: 100%;
+}
+
+.wrapper-head .head {
+  padding: 16px 72px;
+  margin: 0 auto;
+  max-width: 1366px;
+  line-height: 25px;
+}
+
+.wrapper-head .head a {
+  color: #F5F5F5;
+  text-decoration: none;
+  padding: 0 16px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-weight: 500;
+}
+
+.wrapper-head .head a:hover {
+  color: dodgerblue;
+}
+
+.wrapper-head .head a.logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.wrapper-head .head .navs {
+  float: right;
+  cursor: default;
+}
+
+.wrapper-head:hover {
+  background: #000000;
+}
+
+.wrapper-head:hover a {
+  color: #4e4e4e;
+}
+
+.wrapper-home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 26, 56, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../images/20210503_030920.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 26, 56, 0.8), rgba(0, 0, 0, 0.8)), url(../images/20210503_030920.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-home .home {
+  padding: 0 88px;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.wrapper-home .home h1 {
+  font-weight: 500;
+  color: #b4d9ff;
+}
+
+.wrapper-home .home p {
+  color: #F5F5F5;
+}
+
+.wrapper-home .home p, .wrapper-home .home a {
+  font-size: 18px;
+}
+
+.wrapper-home .home a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 500;
+}
+
+.wrapper-home .home a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.wrapper-home-new {
+  background: linear-gradient(136deg, #5cb3a7, #06919b, #1853a5, #45a7b4);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 12s ease infinite;
+          animation: AnimationName 12s ease infinite;
+  height: 100vh;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-home-new .content {
+  padding: 0 88px;
+  margin: 0 auto;
+  max-width: 1366px;
+  text-align: center;
+}
+
+.wrapper-home-new .content h1 {
+  font-weight: 500;
+}
+
+.wrapper-home-new .content h1, .wrapper-home-new .content p, .wrapper-home-new .content a {
+  color: #F5F5F5;
+}
+
+.wrapper-home-new .content p, .wrapper-home-new .content a {
+  font-size: 18px;
+}
+
+.wrapper-home-new .content a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wrapper-home-new .content a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.wrapper-about, .wrapper-about-video, .wrapper-symptoms, .wrapper-symptoms-poster, .wrapper-updates, .wrapper-help, .wrapper-help-video, .wrapper-map {
+  background: #1a1a1a;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-about .about, .wrapper-about .symptoms, .wrapper-about .poster, .wrapper-about .updates, .wrapper-about .help, .wrapper-about .map, .wrapper-about-video .about, .wrapper-about-video .symptoms, .wrapper-about-video .poster, .wrapper-about-video .updates, .wrapper-about-video .help, .wrapper-about-video .map, .wrapper-symptoms .about, .wrapper-symptoms .symptoms, .wrapper-symptoms .poster, .wrapper-symptoms .updates, .wrapper-symptoms .help, .wrapper-symptoms .map, .wrapper-symptoms-poster .about, .wrapper-symptoms-poster .symptoms, .wrapper-symptoms-poster .poster, .wrapper-symptoms-poster .updates, .wrapper-symptoms-poster .help, .wrapper-symptoms-poster .map, .wrapper-updates .about, .wrapper-updates .symptoms, .wrapper-updates .poster, .wrapper-updates .updates, .wrapper-updates .help, .wrapper-updates .map, .wrapper-help .about, .wrapper-help .symptoms, .wrapper-help .poster, .wrapper-help .updates, .wrapper-help .help, .wrapper-help .map, .wrapper-help-video .about, .wrapper-help-video .symptoms, .wrapper-help-video .poster, .wrapper-help-video .updates, .wrapper-help-video .help, .wrapper-help-video .map, .wrapper-map .about, .wrapper-map .symptoms, .wrapper-map .poster, .wrapper-map .updates, .wrapper-map .help, .wrapper-map .map {
+  padding: 0 88px;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.wrapper-about .about h1, .wrapper-about .symptoms h1, .wrapper-about .poster h1, .wrapper-about .updates h1, .wrapper-about .help h1, .wrapper-about .map h1, .wrapper-about-video .about h1, .wrapper-about-video .symptoms h1, .wrapper-about-video .poster h1, .wrapper-about-video .updates h1, .wrapper-about-video .help h1, .wrapper-about-video .map h1, .wrapper-symptoms .about h1, .wrapper-symptoms .symptoms h1, .wrapper-symptoms .poster h1, .wrapper-symptoms .updates h1, .wrapper-symptoms .help h1, .wrapper-symptoms .map h1, .wrapper-symptoms-poster .about h1, .wrapper-symptoms-poster .symptoms h1, .wrapper-symptoms-poster .poster h1, .wrapper-symptoms-poster .updates h1, .wrapper-symptoms-poster .help h1, .wrapper-symptoms-poster .map h1, .wrapper-updates .about h1, .wrapper-updates .symptoms h1, .wrapper-updates .poster h1, .wrapper-updates .updates h1, .wrapper-updates .help h1, .wrapper-updates .map h1, .wrapper-help .about h1, .wrapper-help .symptoms h1, .wrapper-help .poster h1, .wrapper-help .updates h1, .wrapper-help .help h1, .wrapper-help .map h1, .wrapper-help-video .about h1, .wrapper-help-video .symptoms h1, .wrapper-help-video .poster h1, .wrapper-help-video .updates h1, .wrapper-help-video .help h1, .wrapper-help-video .map h1, .wrapper-map .about h1, .wrapper-map .symptoms h1, .wrapper-map .poster h1, .wrapper-map .updates h1, .wrapper-map .help h1, .wrapper-map .map h1 {
+  font-weight: 500;
+  color: #b4d9ff;
+}
+
+.wrapper-about .about p, .wrapper-about .symptoms p, .wrapper-about .poster p, .wrapper-about .updates p, .wrapper-about .help p, .wrapper-about .map p, .wrapper-about-video .about p, .wrapper-about-video .symptoms p, .wrapper-about-video .poster p, .wrapper-about-video .updates p, .wrapper-about-video .help p, .wrapper-about-video .map p, .wrapper-symptoms .about p, .wrapper-symptoms .symptoms p, .wrapper-symptoms .poster p, .wrapper-symptoms .updates p, .wrapper-symptoms .help p, .wrapper-symptoms .map p, .wrapper-symptoms-poster .about p, .wrapper-symptoms-poster .symptoms p, .wrapper-symptoms-poster .poster p, .wrapper-symptoms-poster .updates p, .wrapper-symptoms-poster .help p, .wrapper-symptoms-poster .map p, .wrapper-updates .about p, .wrapper-updates .symptoms p, .wrapper-updates .poster p, .wrapper-updates .updates p, .wrapper-updates .help p, .wrapper-updates .map p, .wrapper-help .about p, .wrapper-help .symptoms p, .wrapper-help .poster p, .wrapper-help .updates p, .wrapper-help .help p, .wrapper-help .map p, .wrapper-help-video .about p, .wrapper-help-video .symptoms p, .wrapper-help-video .poster p, .wrapper-help-video .updates p, .wrapper-help-video .help p, .wrapper-help-video .map p, .wrapper-map .about p, .wrapper-map .symptoms p, .wrapper-map .poster p, .wrapper-map .updates p, .wrapper-map .help p, .wrapper-map .map p {
+  color: #F5F5F5;
+}
+
+.wrapper-about .about p, .wrapper-about .about a, .wrapper-about .symptoms p, .wrapper-about .symptoms a, .wrapper-about .poster p, .wrapper-about .poster a, .wrapper-about .updates p, .wrapper-about .updates a, .wrapper-about .help p, .wrapper-about .help a, .wrapper-about .map p, .wrapper-about .map a, .wrapper-about-video .about p, .wrapper-about-video .about a, .wrapper-about-video .symptoms p, .wrapper-about-video .symptoms a, .wrapper-about-video .poster p, .wrapper-about-video .poster a, .wrapper-about-video .updates p, .wrapper-about-video .updates a, .wrapper-about-video .help p, .wrapper-about-video .help a, .wrapper-about-video .map p, .wrapper-about-video .map a, .wrapper-symptoms .about p, .wrapper-symptoms .about a, .wrapper-symptoms .symptoms p, .wrapper-symptoms .symptoms a, .wrapper-symptoms .poster p, .wrapper-symptoms .poster a, .wrapper-symptoms .updates p, .wrapper-symptoms .updates a, .wrapper-symptoms .help p, .wrapper-symptoms .help a, .wrapper-symptoms .map p, .wrapper-symptoms .map a, .wrapper-symptoms-poster .about p, .wrapper-symptoms-poster .about a, .wrapper-symptoms-poster .symptoms p, .wrapper-symptoms-poster .symptoms a, .wrapper-symptoms-poster .poster p, .wrapper-symptoms-poster .poster a, .wrapper-symptoms-poster .updates p, .wrapper-symptoms-poster .updates a, .wrapper-symptoms-poster .help p, .wrapper-symptoms-poster .help a, .wrapper-symptoms-poster .map p, .wrapper-symptoms-poster .map a, .wrapper-updates .about p, .wrapper-updates .about a, .wrapper-updates .symptoms p, .wrapper-updates .symptoms a, .wrapper-updates .poster p, .wrapper-updates .poster a, .wrapper-updates .updates p, .wrapper-updates .updates a, .wrapper-updates .help p, .wrapper-updates .help a, .wrapper-updates .map p, .wrapper-updates .map a, .wrapper-help .about p, .wrapper-help .about a, .wrapper-help .symptoms p, .wrapper-help .symptoms a, .wrapper-help .poster p, .wrapper-help .poster a, .wrapper-help .updates p, .wrapper-help .updates a, .wrapper-help .help p, .wrapper-help .help a, .wrapper-help .map p, .wrapper-help .map a, .wrapper-help-video .about p, .wrapper-help-video .about a, .wrapper-help-video .symptoms p, .wrapper-help-video .symptoms a, .wrapper-help-video .poster p, .wrapper-help-video .poster a, .wrapper-help-video .updates p, .wrapper-help-video .updates a, .wrapper-help-video .help p, .wrapper-help-video .help a, .wrapper-help-video .map p, .wrapper-help-video .map a, .wrapper-map .about p, .wrapper-map .about a, .wrapper-map .symptoms p, .wrapper-map .symptoms a, .wrapper-map .poster p, .wrapper-map .poster a, .wrapper-map .updates p, .wrapper-map .updates a, .wrapper-map .help p, .wrapper-map .help a, .wrapper-map .map p, .wrapper-map .map a {
+  font-size: 18px;
+}
+
+.wrapper-about .about a, .wrapper-about .symptoms a, .wrapper-about .poster a, .wrapper-about .updates a, .wrapper-about .help a, .wrapper-about .map a, .wrapper-about-video .about a, .wrapper-about-video .symptoms a, .wrapper-about-video .poster a, .wrapper-about-video .updates a, .wrapper-about-video .help a, .wrapper-about-video .map a, .wrapper-symptoms .about a, .wrapper-symptoms .symptoms a, .wrapper-symptoms .poster a, .wrapper-symptoms .updates a, .wrapper-symptoms .help a, .wrapper-symptoms .map a, .wrapper-symptoms-poster .about a, .wrapper-symptoms-poster .symptoms a, .wrapper-symptoms-poster .poster a, .wrapper-symptoms-poster .updates a, .wrapper-symptoms-poster .help a, .wrapper-symptoms-poster .map a, .wrapper-updates .about a, .wrapper-updates .symptoms a, .wrapper-updates .poster a, .wrapper-updates .updates a, .wrapper-updates .help a, .wrapper-updates .map a, .wrapper-help .about a, .wrapper-help .symptoms a, .wrapper-help .poster a, .wrapper-help .updates a, .wrapper-help .help a, .wrapper-help .map a, .wrapper-help-video .about a, .wrapper-help-video .symptoms a, .wrapper-help-video .poster a, .wrapper-help-video .updates a, .wrapper-help-video .help a, .wrapper-help-video .map a, .wrapper-map .about a, .wrapper-map .symptoms a, .wrapper-map .poster a, .wrapper-map .updates a, .wrapper-map .help a, .wrapper-map .map a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 500;
+}
+
+.wrapper-about .about a:hover, .wrapper-about .symptoms a:hover, .wrapper-about .poster a:hover, .wrapper-about .updates a:hover, .wrapper-about .help a:hover, .wrapper-about .map a:hover, .wrapper-about-video .about a:hover, .wrapper-about-video .symptoms a:hover, .wrapper-about-video .poster a:hover, .wrapper-about-video .updates a:hover, .wrapper-about-video .help a:hover, .wrapper-about-video .map a:hover, .wrapper-symptoms .about a:hover, .wrapper-symptoms .symptoms a:hover, .wrapper-symptoms .poster a:hover, .wrapper-symptoms .updates a:hover, .wrapper-symptoms .help a:hover, .wrapper-symptoms .map a:hover, .wrapper-symptoms-poster .about a:hover, .wrapper-symptoms-poster .symptoms a:hover, .wrapper-symptoms-poster .poster a:hover, .wrapper-symptoms-poster .updates a:hover, .wrapper-symptoms-poster .help a:hover, .wrapper-symptoms-poster .map a:hover, .wrapper-updates .about a:hover, .wrapper-updates .symptoms a:hover, .wrapper-updates .poster a:hover, .wrapper-updates .updates a:hover, .wrapper-updates .help a:hover, .wrapper-updates .map a:hover, .wrapper-help .about a:hover, .wrapper-help .symptoms a:hover, .wrapper-help .poster a:hover, .wrapper-help .updates a:hover, .wrapper-help .help a:hover, .wrapper-help .map a:hover, .wrapper-help-video .about a:hover, .wrapper-help-video .symptoms a:hover, .wrapper-help-video .poster a:hover, .wrapper-help-video .updates a:hover, .wrapper-help-video .help a:hover, .wrapper-help-video .map a:hover, .wrapper-map .about a:hover, .wrapper-map .symptoms a:hover, .wrapper-map .poster a:hover, .wrapper-map .updates a:hover, .wrapper-map .help a:hover, .wrapper-map .map a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.wrapper-about .about table, .wrapper-about .symptoms table, .wrapper-about .poster table, .wrapper-about .updates table, .wrapper-about .help table, .wrapper-about .map table, .wrapper-about-video .about table, .wrapper-about-video .symptoms table, .wrapper-about-video .poster table, .wrapper-about-video .updates table, .wrapper-about-video .help table, .wrapper-about-video .map table, .wrapper-symptoms .about table, .wrapper-symptoms .symptoms table, .wrapper-symptoms .poster table, .wrapper-symptoms .updates table, .wrapper-symptoms .help table, .wrapper-symptoms .map table, .wrapper-symptoms-poster .about table, .wrapper-symptoms-poster .symptoms table, .wrapper-symptoms-poster .poster table, .wrapper-symptoms-poster .updates table, .wrapper-symptoms-poster .help table, .wrapper-symptoms-poster .map table, .wrapper-updates .about table, .wrapper-updates .symptoms table, .wrapper-updates .poster table, .wrapper-updates .updates table, .wrapper-updates .help table, .wrapper-updates .map table, .wrapper-help .about table, .wrapper-help .symptoms table, .wrapper-help .poster table, .wrapper-help .updates table, .wrapper-help .help table, .wrapper-help .map table, .wrapper-help-video .about table, .wrapper-help-video .symptoms table, .wrapper-help-video .poster table, .wrapper-help-video .updates table, .wrapper-help-video .help table, .wrapper-help-video .map table, .wrapper-map .about table, .wrapper-map .symptoms table, .wrapper-map .poster table, .wrapper-map .updates table, .wrapper-map .help table, .wrapper-map .map table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #F5F5F5;
+  font-size: 18px;
+  text-align: center;
+}
+
+.wrapper-about .about table th, .wrapper-about .symptoms table th, .wrapper-about .poster table th, .wrapper-about .updates table th, .wrapper-about .help table th, .wrapper-about .map table th, .wrapper-about-video .about table th, .wrapper-about-video .symptoms table th, .wrapper-about-video .poster table th, .wrapper-about-video .updates table th, .wrapper-about-video .help table th, .wrapper-about-video .map table th, .wrapper-symptoms .about table th, .wrapper-symptoms .symptoms table th, .wrapper-symptoms .poster table th, .wrapper-symptoms .updates table th, .wrapper-symptoms .help table th, .wrapper-symptoms .map table th, .wrapper-symptoms-poster .about table th, .wrapper-symptoms-poster .symptoms table th, .wrapper-symptoms-poster .poster table th, .wrapper-symptoms-poster .updates table th, .wrapper-symptoms-poster .help table th, .wrapper-symptoms-poster .map table th, .wrapper-updates .about table th, .wrapper-updates .symptoms table th, .wrapper-updates .poster table th, .wrapper-updates .updates table th, .wrapper-updates .help table th, .wrapper-updates .map table th, .wrapper-help .about table th, .wrapper-help .symptoms table th, .wrapper-help .poster table th, .wrapper-help .updates table th, .wrapper-help .help table th, .wrapper-help .map table th, .wrapper-help-video .about table th, .wrapper-help-video .symptoms table th, .wrapper-help-video .poster table th, .wrapper-help-video .updates table th, .wrapper-help-video .help table th, .wrapper-help-video .map table th, .wrapper-map .about table th, .wrapper-map .symptoms table th, .wrapper-map .poster table th, .wrapper-map .updates table th, .wrapper-map .help table th, .wrapper-map .map table th {
+  background: #b4d9ff;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+}
+
+.wrapper-about .about table td, .wrapper-about .symptoms table td, .wrapper-about .poster table td, .wrapper-about .updates table td, .wrapper-about .help table td, .wrapper-about .map table td, .wrapper-about-video .about table td, .wrapper-about-video .symptoms table td, .wrapper-about-video .poster table td, .wrapper-about-video .updates table td, .wrapper-about-video .help table td, .wrapper-about-video .map table td, .wrapper-symptoms .about table td, .wrapper-symptoms .symptoms table td, .wrapper-symptoms .poster table td, .wrapper-symptoms .updates table td, .wrapper-symptoms .help table td, .wrapper-symptoms .map table td, .wrapper-symptoms-poster .about table td, .wrapper-symptoms-poster .symptoms table td, .wrapper-symptoms-poster .poster table td, .wrapper-symptoms-poster .updates table td, .wrapper-symptoms-poster .help table td, .wrapper-symptoms-poster .map table td, .wrapper-updates .about table td, .wrapper-updates .symptoms table td, .wrapper-updates .poster table td, .wrapper-updates .updates table td, .wrapper-updates .help table td, .wrapper-updates .map table td, .wrapper-help .about table td, .wrapper-help .symptoms table td, .wrapper-help .poster table td, .wrapper-help .updates table td, .wrapper-help .help table td, .wrapper-help .map table td, .wrapper-help-video .about table td, .wrapper-help-video .symptoms table td, .wrapper-help-video .poster table td, .wrapper-help-video .updates table td, .wrapper-help-video .help table td, .wrapper-help-video .map table td, .wrapper-map .about table td, .wrapper-map .symptoms table td, .wrapper-map .poster table td, .wrapper-map .updates table td, .wrapper-map .help table td, .wrapper-map .map table td {
+  padding: 8px;
+  border: 1px solid #b4b4b4;
+}
+
+.wrapper-about .about button, .wrapper-about .symptoms button, .wrapper-about .poster button, .wrapper-about .updates button, .wrapper-about .help button, .wrapper-about .map button, .wrapper-about-video .about button, .wrapper-about-video .symptoms button, .wrapper-about-video .poster button, .wrapper-about-video .updates button, .wrapper-about-video .help button, .wrapper-about-video .map button, .wrapper-symptoms .about button, .wrapper-symptoms .symptoms button, .wrapper-symptoms .poster button, .wrapper-symptoms .updates button, .wrapper-symptoms .help button, .wrapper-symptoms .map button, .wrapper-symptoms-poster .about button, .wrapper-symptoms-poster .symptoms button, .wrapper-symptoms-poster .poster button, .wrapper-symptoms-poster .updates button, .wrapper-symptoms-poster .help button, .wrapper-symptoms-poster .map button, .wrapper-updates .about button, .wrapper-updates .symptoms button, .wrapper-updates .poster button, .wrapper-updates .updates button, .wrapper-updates .help button, .wrapper-updates .map button, .wrapper-help .about button, .wrapper-help .symptoms button, .wrapper-help .poster button, .wrapper-help .updates button, .wrapper-help .help button, .wrapper-help .map button, .wrapper-help-video .about button, .wrapper-help-video .symptoms button, .wrapper-help-video .poster button, .wrapper-help-video .updates button, .wrapper-help-video .help button, .wrapper-help-video .map button, .wrapper-map .about button, .wrapper-map .symptoms button, .wrapper-map .poster button, .wrapper-map .updates button, .wrapper-map .help button, .wrapper-map .map button {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background: #3d9eff;
+  font-weight: 500;
+  border: 0;
+  padding: 4px 8px;
+}
+
+.wrapper-about .about button:focus, .wrapper-about .symptoms button:focus, .wrapper-about .poster button:focus, .wrapper-about .updates button:focus, .wrapper-about .help button:focus, .wrapper-about .map button:focus, .wrapper-about-video .about button:focus, .wrapper-about-video .symptoms button:focus, .wrapper-about-video .poster button:focus, .wrapper-about-video .updates button:focus, .wrapper-about-video .help button:focus, .wrapper-about-video .map button:focus, .wrapper-symptoms .about button:focus, .wrapper-symptoms .symptoms button:focus, .wrapper-symptoms .poster button:focus, .wrapper-symptoms .updates button:focus, .wrapper-symptoms .help button:focus, .wrapper-symptoms .map button:focus, .wrapper-symptoms-poster .about button:focus, .wrapper-symptoms-poster .symptoms button:focus, .wrapper-symptoms-poster .poster button:focus, .wrapper-symptoms-poster .updates button:focus, .wrapper-symptoms-poster .help button:focus, .wrapper-symptoms-poster .map button:focus, .wrapper-updates .about button:focus, .wrapper-updates .symptoms button:focus, .wrapper-updates .poster button:focus, .wrapper-updates .updates button:focus, .wrapper-updates .help button:focus, .wrapper-updates .map button:focus, .wrapper-help .about button:focus, .wrapper-help .symptoms button:focus, .wrapper-help .poster button:focus, .wrapper-help .updates button:focus, .wrapper-help .help button:focus, .wrapper-help .map button:focus, .wrapper-help-video .about button:focus, .wrapper-help-video .symptoms button:focus, .wrapper-help-video .poster button:focus, .wrapper-help-video .updates button:focus, .wrapper-help-video .help button:focus, .wrapper-help-video .map button:focus, .wrapper-map .about button:focus, .wrapper-map .symptoms button:focus, .wrapper-map .poster button:focus, .wrapper-map .updates button:focus, .wrapper-map .help button:focus, .wrapper-map .map button:focus {
+  outline: 0;
+}
+
+.wrapper-about .about button:hover, .wrapper-about .symptoms button:hover, .wrapper-about .poster button:hover, .wrapper-about .updates button:hover, .wrapper-about .help button:hover, .wrapper-about .map button:hover, .wrapper-about-video .about button:hover, .wrapper-about-video .symptoms button:hover, .wrapper-about-video .poster button:hover, .wrapper-about-video .updates button:hover, .wrapper-about-video .help button:hover, .wrapper-about-video .map button:hover, .wrapper-symptoms .about button:hover, .wrapper-symptoms .symptoms button:hover, .wrapper-symptoms .poster button:hover, .wrapper-symptoms .updates button:hover, .wrapper-symptoms .help button:hover, .wrapper-symptoms .map button:hover, .wrapper-symptoms-poster .about button:hover, .wrapper-symptoms-poster .symptoms button:hover, .wrapper-symptoms-poster .poster button:hover, .wrapper-symptoms-poster .updates button:hover, .wrapper-symptoms-poster .help button:hover, .wrapper-symptoms-poster .map button:hover, .wrapper-updates .about button:hover, .wrapper-updates .symptoms button:hover, .wrapper-updates .poster button:hover, .wrapper-updates .updates button:hover, .wrapper-updates .help button:hover, .wrapper-updates .map button:hover, .wrapper-help .about button:hover, .wrapper-help .symptoms button:hover, .wrapper-help .poster button:hover, .wrapper-help .updates button:hover, .wrapper-help .help button:hover, .wrapper-help .map button:hover, .wrapper-help-video .about button:hover, .wrapper-help-video .symptoms button:hover, .wrapper-help-video .poster button:hover, .wrapper-help-video .updates button:hover, .wrapper-help-video .help button:hover, .wrapper-help-video .map button:hover, .wrapper-map .about button:hover, .wrapper-map .symptoms button:hover, .wrapper-map .poster button:hover, .wrapper-map .updates button:hover, .wrapper-map .help button:hover, .wrapper-map .map button:hover {
+  background: #1d8eff;
+}
+
+.wrapper-about .poster .post, .wrapper-about-video .poster .post, .wrapper-symptoms .poster .post, .wrapper-symptoms-poster .poster .post, .wrapper-updates .poster .post, .wrapper-help .poster .post, .wrapper-help-video .poster .post, .wrapper-map .poster .post {
+  background: url(../images/sym.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 120vh;
+}
+
+.wrapper-about .video, .wrapper-about-video .video, .wrapper-symptoms .video, .wrapper-symptoms-poster .video, .wrapper-updates .video, .wrapper-help .video, .wrapper-help-video .video, .wrapper-map .video {
+  padding: 0 88px;
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.wrapper-about .video video, .wrapper-about-video .video video, .wrapper-symptoms .video video, .wrapper-symptoms-poster .video video, .wrapper-updates .video video, .wrapper-help .video video, .wrapper-help-video .video video, .wrapper-map .video video {
+  width: 70%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.wrapper-about .video a, .wrapper-about-video .video a, .wrapper-symptoms .video a, .wrapper-symptoms-poster .video a, .wrapper-updates .video a, .wrapper-help .video a, .wrapper-help-video .video a, .wrapper-map .video a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 500;
+}
+
+.wrapper-about .video a:hover, .wrapper-about-video .video a:hover, .wrapper-symptoms .video a:hover, .wrapper-symptoms-poster .video a:hover, .wrapper-updates .video a:hover, .wrapper-help .video a:hover, .wrapper-help-video .video a:hover, .wrapper-map .video a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+.wrapper-symptoms {
+  height: 140vh;
+}
+
+.wrapper-symptoms ul {
+  padding: 0 18px;
+  color: #F5F5F5;
+}
+
+.wrapper-symptoms-poster {
+  height: 160vh;
+}
+
+.cursor {
+  position: fixed;
+  height: 0;
+  width: 0;
+  border: 8px solid #1d8eff;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper-head .head {
+    padding: 16px 24px;
+  }
+  .wrapper-home .home, .wrapper-home .content, .wrapper-home .about, .wrapper-home .symptoms, .wrapper-home .poster, .wrapper-home .video, .wrapper-home .updates, .wrapper-home .help, .wrapper-home .map, .wrapper-home-new .home, .wrapper-home-new .content, .wrapper-home-new .about, .wrapper-home-new .symptoms, .wrapper-home-new .poster, .wrapper-home-new .video, .wrapper-home-new .updates, .wrapper-home-new .help, .wrapper-home-new .map, .wrapper-about .home, .wrapper-about .content, .wrapper-about .about, .wrapper-about .symptoms, .wrapper-about .poster, .wrapper-about .video, .wrapper-about .updates, .wrapper-about .help, .wrapper-about .map, .wrapper-symptoms .home, .wrapper-symptoms .content, .wrapper-symptoms .about, .wrapper-symptoms .symptoms, .wrapper-symptoms .poster, .wrapper-symptoms .video, .wrapper-symptoms .updates, .wrapper-symptoms .help, .wrapper-symptoms .map, .wrapper-symptoms-poster .home, .wrapper-symptoms-poster .content, .wrapper-symptoms-poster .about, .wrapper-symptoms-poster .symptoms, .wrapper-symptoms-poster .poster, .wrapper-symptoms-poster .video, .wrapper-symptoms-poster .updates, .wrapper-symptoms-poster .help, .wrapper-symptoms-poster .map, .wrapper-about-video .home, .wrapper-about-video .content, .wrapper-about-video .about, .wrapper-about-video .symptoms, .wrapper-about-video .poster, .wrapper-about-video .video, .wrapper-about-video .updates, .wrapper-about-video .help, .wrapper-about-video .map, .wrapper-updates .home, .wrapper-updates .content, .wrapper-updates .about, .wrapper-updates .symptoms, .wrapper-updates .poster, .wrapper-updates .video, .wrapper-updates .updates, .wrapper-updates .help, .wrapper-updates .map, .wrapper-help .home, .wrapper-help .content, .wrapper-help .about, .wrapper-help .symptoms, .wrapper-help .poster, .wrapper-help .video, .wrapper-help .updates, .wrapper-help .help, .wrapper-help .map, .wrapper-help-video .home, .wrapper-help-video .content, .wrapper-help-video .about, .wrapper-help-video .symptoms, .wrapper-help-video .poster, .wrapper-help-video .video, .wrapper-help-video .updates, .wrapper-help-video .help, .wrapper-help-video .map, .wrapper-map .home, .wrapper-map .content, .wrapper-map .about, .wrapper-map .symptoms, .wrapper-map .poster, .wrapper-map .video, .wrapper-map .updates, .wrapper-map .help, .wrapper-map .map {
+    padding: 0 40px;
+  }
+  .wrapper-home .home video, .wrapper-home .content video, .wrapper-home .about video, .wrapper-home .symptoms video, .wrapper-home .poster video, .wrapper-home .video video, .wrapper-home .updates video, .wrapper-home .help video, .wrapper-home .map video, .wrapper-home-new .home video, .wrapper-home-new .content video, .wrapper-home-new .about video, .wrapper-home-new .symptoms video, .wrapper-home-new .poster video, .wrapper-home-new .video video, .wrapper-home-new .updates video, .wrapper-home-new .help video, .wrapper-home-new .map video, .wrapper-about .home video, .wrapper-about .content video, .wrapper-about .about video, .wrapper-about .symptoms video, .wrapper-about .poster video, .wrapper-about .video video, .wrapper-about .updates video, .wrapper-about .help video, .wrapper-about .map video, .wrapper-symptoms .home video, .wrapper-symptoms .content video, .wrapper-symptoms .about video, .wrapper-symptoms .symptoms video, .wrapper-symptoms .poster video, .wrapper-symptoms .video video, .wrapper-symptoms .updates video, .wrapper-symptoms .help video, .wrapper-symptoms .map video, .wrapper-symptoms-poster .home video, .wrapper-symptoms-poster .content video, .wrapper-symptoms-poster .about video, .wrapper-symptoms-poster .symptoms video, .wrapper-symptoms-poster .poster video, .wrapper-symptoms-poster .video video, .wrapper-symptoms-poster .updates video, .wrapper-symptoms-poster .help video, .wrapper-symptoms-poster .map video, .wrapper-about-video .home video, .wrapper-about-video .content video, .wrapper-about-video .about video, .wrapper-about-video .symptoms video, .wrapper-about-video .poster video, .wrapper-about-video .video video, .wrapper-about-video .updates video, .wrapper-about-video .help video, .wrapper-about-video .map video, .wrapper-updates .home video, .wrapper-updates .content video, .wrapper-updates .about video, .wrapper-updates .symptoms video, .wrapper-updates .poster video, .wrapper-updates .video video, .wrapper-updates .updates video, .wrapper-updates .help video, .wrapper-updates .map video, .wrapper-help .home video, .wrapper-help .content video, .wrapper-help .about video, .wrapper-help .symptoms video, .wrapper-help .poster video, .wrapper-help .video video, .wrapper-help .updates video, .wrapper-help .help video, .wrapper-help .map video, .wrapper-help-video .home video, .wrapper-help-video .content video, .wrapper-help-video .about video, .wrapper-help-video .symptoms video, .wrapper-help-video .poster video, .wrapper-help-video .video video, .wrapper-help-video .updates video, .wrapper-help-video .help video, .wrapper-help-video .map video, .wrapper-map .home video, .wrapper-map .content video, .wrapper-map .about video, .wrapper-map .symptoms video, .wrapper-map .poster video, .wrapper-map .video video, .wrapper-map .updates video, .wrapper-map .help video, .wrapper-map .map video {
+    width: 100%;
+  }
+  .wrapper-help {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapper-head .head {
+    padding: 16px 18px;
+  }
+  .wrapper-head .head a {
+    padding: 0 4px;
+  }
+  .wrapper-head .head .navs {
+    float: none;
+  }
+  .wrapper-home .home, .wrapper-home .content, .wrapper-home .about, .wrapper-home .symptoms, .wrapper-home .poster, .wrapper-home .video, .wrapper-home .updates, .wrapper-home .help, .wrapper-home .map, .wrapper-home-new .home, .wrapper-home-new .content, .wrapper-home-new .about, .wrapper-home-new .symptoms, .wrapper-home-new .poster, .wrapper-home-new .video, .wrapper-home-new .updates, .wrapper-home-new .help, .wrapper-home-new .map, .wrapper-about .home, .wrapper-about .content, .wrapper-about .about, .wrapper-about .symptoms, .wrapper-about .poster, .wrapper-about .video, .wrapper-about .updates, .wrapper-about .help, .wrapper-about .map, .wrapper-symptoms .home, .wrapper-symptoms .content, .wrapper-symptoms .about, .wrapper-symptoms .symptoms, .wrapper-symptoms .poster, .wrapper-symptoms .video, .wrapper-symptoms .updates, .wrapper-symptoms .help, .wrapper-symptoms .map, .wrapper-symptoms-poster .home, .wrapper-symptoms-poster .content, .wrapper-symptoms-poster .about, .wrapper-symptoms-poster .symptoms, .wrapper-symptoms-poster .poster, .wrapper-symptoms-poster .video, .wrapper-symptoms-poster .updates, .wrapper-symptoms-poster .help, .wrapper-symptoms-poster .map, .wrapper-about-video .home, .wrapper-about-video .content, .wrapper-about-video .about, .wrapper-about-video .symptoms, .wrapper-about-video .poster, .wrapper-about-video .video, .wrapper-about-video .updates, .wrapper-about-video .help, .wrapper-about-video .map, .wrapper-updates .home, .wrapper-updates .content, .wrapper-updates .about, .wrapper-updates .symptoms, .wrapper-updates .poster, .wrapper-updates .video, .wrapper-updates .updates, .wrapper-updates .help, .wrapper-updates .map, .wrapper-help .home, .wrapper-help .content, .wrapper-help .about, .wrapper-help .symptoms, .wrapper-help .poster, .wrapper-help .video, .wrapper-help .updates, .wrapper-help .help, .wrapper-help .map, .wrapper-help-video .home, .wrapper-help-video .content, .wrapper-help-video .about, .wrapper-help-video .symptoms, .wrapper-help-video .poster, .wrapper-help-video .video, .wrapper-help-video .updates, .wrapper-help-video .help, .wrapper-help-video .map, .wrapper-map .home, .wrapper-map .content, .wrapper-map .about, .wrapper-map .symptoms, .wrapper-map .poster, .wrapper-map .video, .wrapper-map .updates, .wrapper-map .help, .wrapper-map .map {
+    padding: 0 24px;
+  }
+  .wrapper-home .home video, .wrapper-home .content video, .wrapper-home .about video, .wrapper-home .symptoms video, .wrapper-home .poster video, .wrapper-home .video video, .wrapper-home .updates video, .wrapper-home .help video, .wrapper-home .map video, .wrapper-home-new .home video, .wrapper-home-new .content video, .wrapper-home-new .about video, .wrapper-home-new .symptoms video, .wrapper-home-new .poster video, .wrapper-home-new .video video, .wrapper-home-new .updates video, .wrapper-home-new .help video, .wrapper-home-new .map video, .wrapper-about .home video, .wrapper-about .content video, .wrapper-about .about video, .wrapper-about .symptoms video, .wrapper-about .poster video, .wrapper-about .video video, .wrapper-about .updates video, .wrapper-about .help video, .wrapper-about .map video, .wrapper-symptoms .home video, .wrapper-symptoms .content video, .wrapper-symptoms .about video, .wrapper-symptoms .symptoms video, .wrapper-symptoms .poster video, .wrapper-symptoms .video video, .wrapper-symptoms .updates video, .wrapper-symptoms .help video, .wrapper-symptoms .map video, .wrapper-symptoms-poster .home video, .wrapper-symptoms-poster .content video, .wrapper-symptoms-poster .about video, .wrapper-symptoms-poster .symptoms video, .wrapper-symptoms-poster .poster video, .wrapper-symptoms-poster .video video, .wrapper-symptoms-poster .updates video, .wrapper-symptoms-poster .help video, .wrapper-symptoms-poster .map video, .wrapper-about-video .home video, .wrapper-about-video .content video, .wrapper-about-video .about video, .wrapper-about-video .symptoms video, .wrapper-about-video .poster video, .wrapper-about-video .video video, .wrapper-about-video .updates video, .wrapper-about-video .help video, .wrapper-about-video .map video, .wrapper-updates .home video, .wrapper-updates .content video, .wrapper-updates .about video, .wrapper-updates .symptoms video, .wrapper-updates .poster video, .wrapper-updates .video video, .wrapper-updates .updates video, .wrapper-updates .help video, .wrapper-updates .map video, .wrapper-help .home video, .wrapper-help .content video, .wrapper-help .about video, .wrapper-help .symptoms video, .wrapper-help .poster video, .wrapper-help .video video, .wrapper-help .updates video, .wrapper-help .help video, .wrapper-help .map video, .wrapper-help-video .home video, .wrapper-help-video .content video, .wrapper-help-video .about video, .wrapper-help-video .symptoms video, .wrapper-help-video .poster video, .wrapper-help-video .video video, .wrapper-help-video .updates video, .wrapper-help-video .help video, .wrapper-help-video .map video, .wrapper-map .home video, .wrapper-map .content video, .wrapper-map .about video, .wrapper-map .symptoms video, .wrapper-map .poster video, .wrapper-map .video video, .wrapper-map .updates video, .wrapper-map .help video, .wrapper-map .map video {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
