@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+    // cursor: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Alike Angular', serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    background: #000000;
+    display: grid;
+    align-items: center;
+    .material {
+        max-width: 58%;
+        margin: 0 auto;
+        color: #f0f0f0;
+        h1 {
+            font-size: 72px;
+            line-height: auto;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        p {
+            font-size: 24px;
+            line-height: auto;
+        }
+    }
+
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: #f0f0f0;
+        padding-bottom: 36px;
+
+        p.foot {
+            font-size: 18px;
+            line-height: auto;
+        }
+    }
+}
+
+
+.next-wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    text-align: center;
+    // background: linear-gradient(116.68deg, #5cb3a7, #68422e, #283342, #327179);
+    background: linear-gradient(136deg, #5cb3a7, #68422e, #283342, #327179);
+    background-size: 800% 800%;
+    // -webkit-animation: AnimationName 12s ease infinite;
+    // -moz-animation: AnimationName 12s ease infinite;
+    // -o-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+    display: none;
+    align-items: center;
+
+    .top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 24px 36px;
+
+        a.nav:hover {
+            cursor: pointer;
+        }
+
+        .sidenav {
+            height: 100vh;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            h2, p {
+                color: #f0f0f0;
+                padding: 16px 32px;
+            }
+        }
+          
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+          
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+          
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+
+    .material {
+        max-width: 58%;
+        margin: 0 auto;
+        color: #f0f0f0;
+        background: transparent;
+        h1 {
+            font-size: 48px;
+            line-height: auto;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        p {
+            font-size: 24px;
+            line-height: auto;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-family: 'Alike Angular', serif;
+            border: 2px solid #f0f0f0;
+            margin: 24px 12px;
+            border-radius: 9px;
+            transition: .2s;
+        }
+        button.a {
+            background: transparent;
+            color: #f0f0f0;
+        }
+        button.b {
+            background: #f0f0f0;
+            color: #000000;
+        }
+        button.b:hover {
+            background: #ffb108;
+            cursor: pointer;
+        }
+        button.a:hover {
+            color: #ffb108;
+            cursor: pointer;
+        }
+        button.a:hover, button.b:hover {
+            border: 2px solid #ffd30d;
+        }
+        button:focus {
+            outline: 0;
+        }
+    }
+    .material-hidden {
+        display: none;
+    }
+    .bottom {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: #f0f0f0;
+        padding: 36px 36px;
+
+        button {
+            font-family: 'Alike Angular', serif;
+            font-size: 18px;
+            color: #f0f0f0;
+            background: transparent;
+            border: none;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        button:focus {
+            outline: 0;
+        }
+    }
+}
+
+
+.cursor {
+    position: fixed;
+    height: 0;
+    width: 0;
+    border: 8px solid #f0f0f0cc;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: .2s;
+}
+
+// @-webkit-keyframes AnimationName {
+//     0%{background-position:5% 0%}
+//     50%{background-position:96% 100%}
+//     100%{background-position:5% 0%}
+// }
+// @-moz-keyframes AnimationName {
+//     0%{background-position:5% 0%}
+//     50%{background-position:96% 100%}
+//     100%{background-position:5% 0%}
+// }
+// @-o-keyframes AnimationName {
+//     0%{background-position:5% 0%}
+//     50%{background-position:96% 100%}
+//     100%{background-position:5% 0%}
+// }
+@keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+
+
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        .material {
+            max-width: 78%;
+        }
+    }
+    .next-wrapper {
+        .material {
+            max-width: 78%;
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .wrapper {
+        .material {
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    .next-wrapper {
+        .top {
+            display: none;
+        }
+        .material {
+            display: none;
+        }
+        .material-hidden {
+            display: block;
+            max-width: 78%;
+            margin: 0 auto;
+            color: #f0f0f0;
+            background: transparent;
+            h1 {
+                font-size: 40px;
+                font-family: 'Cormorant Garamond', serif;
+            }
+        }
+        .bottom {
+            left: 0;
+        }
+    }
+}
+
+
+
+    
+
